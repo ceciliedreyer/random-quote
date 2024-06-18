@@ -1,0 +1,40 @@
+.wrapper {
+  background-color: white;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 40px 50px;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: var(--main-bg-color);
+}
+
+p {
+  text-align: end;
+  color: var(--main-bg-color);
+}
+
+button {
+  background-color: var(--main-bg-color);
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 13px;
+  color: white;
+  padding: 5px 12px;
+  margin: 20px 2px 2px 2px;
+}
+
+footer {
+  color: white;
+  margin-top: 15px;
+}
+
+.new-quote-button {
+  display: block;
+  float: right;
+}
