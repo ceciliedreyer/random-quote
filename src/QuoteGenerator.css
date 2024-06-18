@@ -18,7 +18,7 @@ p {
   color: var(--main-bg-color);
 }
 
-button {
+.button {
   background-color: var(--main-bg-color);
   border: none;
   border-radius: 3px;

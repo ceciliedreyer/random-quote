@@ -1,19 +1,24 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./QuoteGenerator.css";
+import Quote from "./Quote";
 
 export default function QuoteGenerator() {
   return (
     <div className="quote-generator">
       <div className="wrapper">
-        <h1 className="quote">"quote"</h1>
+        <h1 className="quote">
+          <Quote />
+        </h1>
         <p className="author">
           <em>- Cecilie Dreyer</em>
         </p>
         <div className="buttons">
-          <button className="social-share-button">T</button>
-          <button className="social-share-button">F</button>
-          <button className="new-quote-button">new quote</button>
+          <a className="social-share-button button">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <button className="social-share-button button">F</button>
+          <button className="new-quote-button button">new quote</button>
         </div>
       </div>
       <footer>
