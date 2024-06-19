@@ -61,10 +61,18 @@ export default function QuoteGenerator() {
           </p>
         </div>
         <div className="buttons">
-          <a className="social-share-button button twitter">
+          <a
+            className="social-share-button button twitter"
+            href="www.twitter.com"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <button className="social-share-button button tumblr">
+          <button
+            className="social-share-button button tumblr"
+            href="www.twitter.com"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faTumblr} />
           </button>
           <button className="new-quote-button button" onClick={getQuote}>
