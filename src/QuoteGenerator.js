@@ -63,18 +63,22 @@ export default function QuoteGenerator() {
         <div className="buttons">
           <a
             className="social-share-button button twitter"
-            href="www.twitter.com"
+            href={`https://twitter.com/intent/tweet?text=${quote}`}
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <button
+          <a
             className="social-share-button button tumblr"
-            href="www.twitter.com"
+            id="tumblr-quote"
+            title="Post this quote on tumblr!"
+            href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=${author}&content=${quote}www.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`}
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faTumblr} />
-          </button>
+          </a>
           <button className="new-quote-button button" onClick={getQuote}>
             new quote
           </button>

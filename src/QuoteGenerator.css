@@ -16,16 +16,6 @@ p {
   color: var(--main-bg-color);
 }
 
-.button {
-  background-color: var(--main-bg-color);
-  border: none;
-  border-radius: 3px;
-  box-shadow: none;
-  font-size: 13px;
-  color: white;
-  margin: 20px 2px 2px 2px;
-}
-
 footer {
   color: white;
   margin-top: 15px;
@@ -61,8 +51,21 @@ footer {
   padding: 5px 12px;
 }
 
+.button,
+a {
+  background-color: var(--main-bg-color);
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 13px;
+  color: white;
+}
+
 .tumblr {
-  padding: 4.5px 10px;
+  padding-top: 5.7px;
+  padding-bottom: 6.9px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .twitter {
@@ -70,8 +73,5 @@ footer {
   padding-bottom: 6.9px;
   padding-left: 7px;
   padding-right: 7px;
-}
-
-a {
-  color: white;
+  margin-right: 5px;
 }
