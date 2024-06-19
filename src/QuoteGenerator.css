@@ -38,6 +38,10 @@ footer {
   justify-content: center;
 }
 
+.quote-author {
+  margin-right: 5px;
+}
+
 .new-quote-button {
   display: block;
   float: right;
