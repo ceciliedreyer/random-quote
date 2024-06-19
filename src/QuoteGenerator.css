@@ -3,7 +3,7 @@
   border-radius: 3px;
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   padding: 40px 50px;
 }
 
@@ -25,7 +25,6 @@ p {
   box-shadow: none;
   font-size: 13px;
   color: white;
-  padding: 5px 12px;
   margin: 20px 2px 2px 2px;
 }
 
@@ -34,7 +33,35 @@ footer {
   margin-top: 15px;
 }
 
+.quote {
+  display: flex;
+  justify-content: center;
+}
+
 .new-quote-button {
   display: block;
   float: right;
+  padding: 5px 12px;
+}
+
+.tumblr {
+  padding: 4.5px 10px;
+}
+
+.twitter {
+  padding-top: 6.2px;
+  padding-bottom: 6.9px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+@media screen and (min-width: 900px) {
+  .wrapper {
+    background-color: white;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    padding: 40px 50px;
+  }
 }

@@ -1,0 +1,11 @@
+.quote-copy {
+  font-size: 42px;
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 46px;
+  position: relative;
+  top: 3.5px;
+  right: 3px;
+}
