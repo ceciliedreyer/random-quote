@@ -5,15 +5,21 @@ import { faUser, faFolder } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faTumblr } from "@fortawesome/free-brands-svg-icons";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 import "./QuoteGenerator.css";
-import Quote from "./Quote";
+
 library.add(faUser, faFolder);
 
 export default function QuoteGenerator() {
-  const [quote, setQuote] = useState("hello there");
+  const [quote, setQuote] = useState(
+    "it always seems imposible until it's done"
+  );
+  const [author, setAuthor] = useState("Nelson Mandela");
+  const [color, setColor] = useState("#fb6964");
 
   function handleSearch(response) {
-    setQuote(response.data);
+    setQuote(response.data.content);
+    setAuthor(response.data.author);
   }
 
   function getQuote(event) {
@@ -26,11 +32,16 @@ export default function QuoteGenerator() {
     <div className="quote-generator">
       <div className="wrapper">
         <div className="quote">
-          <Quote data={quote} />
+          <strong className="quote-icon">
+            <FontAwesomeIcon icon={faQuoteLeft} />
+          </strong>
+          <div className="quote-copy">
+            <h1>{quote}</h1>
+          </div>
         </div>
         <div>
           <p className="quote-author">
-            <em>- {quote.author}</em>
+            <em>- {author}</em>
           </p>
         </div>
         <div className="buttons">
@@ -46,7 +57,15 @@ export default function QuoteGenerator() {
         </div>
       </div>
       <footer>
-        by Cecilie Lyng. <a>open-sourced on GitHub</a>.
+        by Cecilie Lyng.{" "}
+        <a
+          href="https://github.com/ceciliedreyer/random-quote"
+          target="_blank"
+          rel="noreferrer"
+        >
+          open-sourced on GitHub
+        </a>
+        .
       </footer>
     </div>
   );

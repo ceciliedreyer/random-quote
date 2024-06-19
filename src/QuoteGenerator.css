@@ -1,3 +1,7 @@
+:root {
+  --main-bg-color: #fb6964;
+}
+
 .wrapper {
   background-color: white;
   border-radius: 3px;
@@ -5,12 +9,6 @@
   margin: 0 auto;
   width: 60%;
   padding: 40px 50px;
-}
-
-h1 {
-  font-size: 24px;
-  text-align: center;
-  color: var(--main-bg-color);
 }
 
 p {
@@ -35,11 +33,26 @@ footer {
 
 .quote {
   display: flex;
-  justify-content: center;
+}
+
+.quote-copy h1 {
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  top: 10px;
+  font-weight: 400px;
+  color: var(--main-bg-color);
+}
+
+.quote-icon {
+  font-size: 46px;
+  position: relative;
+  color: var(--main-bg-color);
 }
 
 .quote-author {
   margin-right: 5px;
+  margin-top: 5px;
 }
 
 .new-quote-button {
@@ -53,19 +66,12 @@ footer {
 }
 
 .twitter {
-  padding-top: 6.2px;
+  padding-top: 5.7px;
   padding-bottom: 6.9px;
   padding-left: 7px;
   padding-right: 7px;
 }
 
-@media screen and (min-width: 900px) {
-  .wrapper {
-    background-color: white;
-    border-radius: 3px;
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    padding: 40px 50px;
-  }
+a {
+  color: white;
 }
