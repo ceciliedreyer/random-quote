@@ -15,11 +15,27 @@ export default function QuoteGenerator() {
     "it always seems imposible until it's done"
   );
   const [author, setAuthor] = useState("Nelson Mandela");
-  const [color, setColor] = useState("#fb6964");
 
   function handleSearch(response) {
     setQuote(response.data.content);
     setAuthor(response.data.author);
+
+    let colorScheme = [
+      "#27ae60",
+      "#16A086",
+      "#16A086",
+      "#BDBB99",
+      "#342224",
+      "#E74C3C",
+      "#9B59B6",
+      "#E74C3C",
+      "#F39C13",
+    ];
+
+    let randomIndex = Math.floor(Math.random() * colorScheme.length);
+    let randomColor = colorScheme[randomIndex];
+
+    document.documentElement.style.setProperty("--main-bg-color", randomColor);
   }
 
   function getQuote(event) {
