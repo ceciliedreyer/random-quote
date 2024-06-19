@@ -46,7 +46,7 @@ export default function QuoteGenerator() {
 
   return (
     <div className="quote-generator">
-      <div className="wrapper">
+      <div className="wrapper align-middle">
         <div className="quote">
           <strong className="quote-icon">
             <FontAwesomeIcon icon={faQuoteLeft} />
